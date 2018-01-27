@@ -1,5 +1,5 @@
 ## svg parser
-See [Sketch Learning - SVG 生成 PNG 和坐标序列](http://blog.csdn.net/Jerr__y/article/details/79120142) for more details.(In Chinese)
+See [Sketch Learning - SVG 生成 PNG 和坐标序列](http://mp.blog.csdn.net/mdeditor/index/79182228) for more details.(In Chinese)
 
 Parse the svg file of sketch into coordinate sequences. 
 
