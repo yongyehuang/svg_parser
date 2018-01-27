@@ -10,10 +10,11 @@ from xml.dom import minidom
 from multiprocessing import Pool
 import time
 
-import logging
 import logging.handlers
 
-"""Parse the tu-berlin svg dataset to coordinate sequences."""
+"""Parse the tu-berlin svg dataset to coordinate sequences.
+Get the tu-berlin svg dataset: http://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/sketches_svg.zip
+"""
 
 LOG_FILE = 'parser.log'
 handler = logging.handlers.RotatingFileHandler(LOG_FILE, maxBytes=1024 * 1024, backupCount=5)  # 实例化handler

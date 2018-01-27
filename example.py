@@ -14,7 +14,8 @@ def svg_to_np(svg_file_name, sample_len=20, original_flag=False):
         sample_len: dot sample parameter, the larger sample_len is, the less dot will get. Only works when original_flag is Fasle.
         original_flag: If True, get the original coordinates. If False, get the sampled coordinates.
     Returns:
-
+        image_coord: numpy.ndarray with shape [n_dot, 3], coordinate sequence. Each line denotes the location for a dot [x, y, is_end]
+        if is_end == 1, the dot is the end of a stroke.
     """
     xml_file = minidom.parse(svg_file_name)
     paths = xml_file.getElementsByTagName("path")
